@@ -65,8 +65,6 @@ project/
 │   ├── client2.jpg
 │   ├── client3.jpg
 │   └── client4.jpg
-│
-└── js/
 ```
 
 ---
@@ -76,7 +74,7 @@ project/
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/ASwasthikGPrabhu/TDA-Bootcamp-WebDev-Task-Figma-to-Webpage.git
 ```
 
 Open the project folder
@@ -134,12 +132,6 @@ This project helped in practicing:
 - Accessibility Improvements
 - Dark / Light Theme
 - React Version
-
----
-
-## Acknowledgements
-
-Design inspired by the **Startup 3** landing page available on Figma and recreated for learning and frontend development practice.
 
 ---
 
