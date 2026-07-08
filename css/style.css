@@ -1,0 +1,1408 @@
+/*====================================================
+                GLOBAL STYLES
+=====================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'DM Sans',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+    background:#2F1893;
+    color:#fff;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    cursor:pointer;
+    font-family:inherit;
+}
+
+
+/*====================================================
+                    HERO SECTION
+=====================================================*/
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    background:url("../images/landing.jpg") center center/cover no-repeat;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(103,58,183,.55),
+        rgba(52,44,145,.55)
+    );
+}
+
+
+/*====================================================
+                    NAVBAR
+=====================================================*/
+
+.hero nav{
+
+    position:relative;
+
+    z-index:10;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:40px 0;
+}
+
+.hero nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:48px;
+
+    list-style:none;
+}
+
+.hero nav a{
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    opacity:.75;
+
+    transition:.3s;
+}
+
+.hero nav a:hover{
+
+    opacity:1;
+}
+
+.hero nav .active{
+
+    opacity:1;
+}
+
+
+/*====================================================
+                  HERO CONTENT
+=====================================================*/
+
+.hero-content{
+
+    position:relative;
+
+    z-index:10;
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 90px;
+}
+
+.hero-text{
+
+    width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:#fff;
+}
+
+.hero-text h3{
+    font-size:24px;
+    line-height:32px;
+    font-weight:700;
+}
+
+.hero-text h1{
+    font-size:72px;
+    line-height:86px;
+    font-weight:700;
+    letter-spacing:-2px;
+}
+
+.hero-text p{
+    width:720px;
+    margin:auto;
+    font-size:22px;
+    line-height:32px;
+}
+
+
+/*====================================================
+                    DOTS
+=====================================================*/
+
+.hero-dots{
+
+    margin:45px 0 50px;
+}
+
+.hero-dot{
+
+    width:11px;
+
+    height:11px;
+
+    display:inline-block;
+
+    border-radius:50%;
+
+    border:2px solid #fff;
+
+    margin:0 6px;
+
+    opacity:.6;
+}
+
+.hero-dot.active{
+
+    background:#fff;
+
+    opacity:1;
+}
+
+
+/*====================================================
+                  HERO BUTTON
+=====================================================*/
+
+.hero-btn{
+
+    border:none;
+
+    outline:none;
+
+    background:#482BE7;
+
+    color:#fff;
+
+    padding:20px 55px;
+
+    border-radius:100px;
+
+    font-size:22px;
+
+    transition:.3s;
+}
+
+.hero-btn:hover{
+
+    background:#3416cf;
+}
+
+
+/*====================================================
+                  HERO ARROWS
+=====================================================*/
+
+.hero-arrow{
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    background:transparent;
+
+    color:#fff;
+
+    font-size:36px;
+
+    opacity:.65;
+
+    transition:.3s;
+}
+
+.hero-arrow:hover{
+
+    opacity:1;
+}
+
+
+/*====================================================
+                RESPONSIVE HERO
+=====================================================*/
+
+@media(max-width:1200px){
+
+.hero-text h1{
+
+    font-size:65px;
+}
+
+.hero-text p{
+
+    width:90%;
+
+    font-size:22px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero nav ul{
+
+    gap:20px;
+}
+
+.hero-text{
+
+    width:100%;
+}
+
+.hero-text h1{
+
+    font-size:45px;
+}
+
+.hero-text h3{
+
+    font-size:22px;
+}
+
+.hero-text p{
+
+    width:100%;
+
+    font-size:18px;
+}
+
+.hero-content{
+
+    padding:0 20px;
+}
+
+.hero-arrow{
+
+    display:none;
+}
+
+}
+
+/*====================================================
+                GENERATOR SECTION
+=====================================================*/
+
+.generator{
+
+    position:relative;
+
+    width:100%;
+
+    height:75vh;
+
+    background:url("../images/content.jpg") center center/cover no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.generator-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(40,22,110,.45);
+}
+
+.generator-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:900px;
+
+    text-align:center;
+
+    color:#fff;
+}
+
+.generator-content h4{
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.generator-content h1{
+
+    font-size:58px;
+
+    line-height:70px;
+
+    letter-spacing:-1px;
+    margin-bottom:18px;
+    padding-top:18px;
+}
+
+.generator-content p{
+
+    width:770px;
+
+    max-width:100%;
+
+    margin:0 auto;
+
+    color:#FFFFFF;
+
+    font-size:18px;
+
+    font-weight:400;
+
+    line-height:32px;
+
+    text-align:center;
+
+    opacity:0.7;
+}
+
+/*====================================================
+            RESPONSIVE GENERATOR
+=====================================================*/
+
+@media(max-width:900px){
+
+.generator-content{
+
+    width:90%;
+}
+
+.generator-content h1{
+
+    font-size:46px;
+}
+
+.generator-content p{
+
+    width:100%;
+
+    font-size:18px;
+}
+
+}
+
+/*====================================================
+                SIGNUP SECTION
+=====================================================*/
+
+.signup-section{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+    padding:80px 0;
+
+    background:url("../images/form.jpg") center center/cover no-repeat;
+}
+
+.signup-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(48,33,120,.40);
+}
+
+.signup-container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:1200px;
+
+    max-width:90%;
+
+    height:100%;
+
+    margin:0 auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+
+/*====================================================
+                    LEFT SIDE
+=====================================================*/
+
+.signup-left{
+
+    width:45%;
+
+    color:#fff;
+}
+
+.signup-left h1{
+
+    font-size:58px;
+
+    line-height:70px;
+
+    letter-spacing:-1px;
+}
+
+.signup-left p{
+
+    font-size:22px;
+
+    line-height:32px;
+}
+
+
+/*====================================================
+                    SIGNUP CARD
+=====================================================*/
+
+.signup-card{
+
+    width:470px;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.2);
+}
+
+.signup-tabs{
+
+    display:flex;
+
+    height:80px;
+
+    border-bottom:1px solid #eee;
+}
+
+.signup-tabs button{
+
+    flex:1;
+
+    border:none;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#888;
+}
+
+.signup-tabs .active{
+
+    color:#2d1e84;
+
+    border-bottom:4px solid #2d1e84;
+}
+
+.signup-form{
+
+    padding:45px;
+}
+
+.signup-form input{
+
+    width:100%;
+
+    height:62px;
+
+    margin-bottom:22px;
+
+    border:2px solid #eee;
+
+    border-radius:35px;
+
+    padding:0 25px;
+
+    font-size:18px;
+
+    outline:none;
+}
+
+.signup-form input::placeholder{
+
+    color:#999;
+}
+
+
+/*====================================================
+                    BUTTONS
+=====================================================*/
+
+.create{
+
+    width:100%;
+
+    height:62px;
+
+    border:none;
+
+    border-radius:35px;
+
+    background:#25DAC5;
+
+    color:#fff;
+    font-weight:500;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+
+.create:hover{
+
+    background:#1fc7b3;
+}
+
+.twitter{
+
+    width:100%;
+
+    height:62px;
+
+    border:none;
+
+    border-radius:35px;
+
+    background:#1DA1F2;
+
+    color:#fff;
+
+    font-size:18px;
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.twitter:hover{
+
+    background:#0d8ae6;
+}
+
+
+/*====================================================
+                    DIVIDER
+=====================================================*/
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    margin:35px 0;
+}
+
+.divider span{
+
+    flex:1;
+
+    height:1px;
+
+    background:#ddd;
+}
+
+.divider p{
+
+    margin:0 18px;
+
+    color:#999;
+}
+
+
+/*====================================================
+                RESPONSIVE SIGNUP
+=====================================================*/
+
+@media(max-width:1000px){
+
+.signup-container{
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:40px;
+}
+
+.signup-left{
+
+    width:100%;
+
+    text-align:center;
+}
+
+.signup-left p{
+
+    width:100%;
+}
+
+.signup-card{
+
+    width:100%;
+
+    max-width:480px;
+}
+
+.signup-left h1{
+
+    font-size:46px;
+}
+
+}
+
+
+/*====================================================
+                TESTIMONIAL SECTION
+=====================================================*/
+
+.testimonials{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 0;
+
+    background:#2B1677;
+}
+
+.testimonial-container{
+
+    width:1100px;
+
+    max-width:90%;
+
+    margin:0 auto;
+}
+
+.testimonial-container h1{
+
+    color:#fff;
+
+    font-size:42px;
+
+    font-weight:700;
+    line-height:52px;
+
+}
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+}
+
+
+/*====================================================
+                TESTIMONIAL CARD
+=====================================================*/
+
+.testimonial-card{
+
+    display:flex;
+
+    gap:25px;
+
+    padding:30px;
+
+    min-height:220px;
+
+    border:2px solid rgba(255,255,255,.12);
+
+    border-radius:10px;
+}
+
+.testimonial-card img{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    flex-shrink:0;
+}
+
+.testimonial-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+}
+
+.testimonial-content p{
+
+    font-size:18px;
+
+    line-height:28px;
+}
+
+.testimonial-content h4{
+
+    font-size:14px;
+
+    letter-spacing:2px;
+}
+
+
+/*====================================================
+            RESPONSIVE TESTIMONIALS
+=====================================================*/
+
+@media(max-width:900px){
+
+.testimonial-grid{
+
+    grid-template-columns:1fr;
+}
+
+.testimonial-container h1{
+
+    text-align:center;
+}
+
+.testimonial-card{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+}
+
+/*====================================================
+                SHOWCASE SECTION
+=====================================================*/
+
+.showcase-section{
+
+    min-height:100vh;
+
+    padding:80px 0;
+
+    background:#2F1893;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.showcase-container{
+
+    width:1100px;
+
+    max-width:90%;
+
+    margin:0 auto;
+}
+
+
+/*====================================================
+                SHOWCASE HEADER
+=====================================================*/
+
+.showcase-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:60px;
+}
+
+.showcase-header h1{
+
+    color:#fff;
+
+    font-size:42px;
+
+    font-weight:700;
+}
+
+.showcase-btn{
+
+    padding:14px 30px;
+
+    border:2px solid rgba(255,255,255,.25);
+
+    border-radius:30px;
+
+    background:transparent;
+
+    color:#fff;
+
+    font-size:17px;
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.showcase-btn:hover{
+
+    background:rgba(255,255,255,.08);
+}
+
+
+/*====================================================
+                SHOWCASE GRID
+=====================================================*/
+
+.showcase-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:60px 35px;
+}
+
+.showcase-item{
+
+    text-align:center;
+}
+
+.showcase-item img{
+
+    width:100%;
+
+    height:270px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+.showcase-item img:hover{
+
+    transform:scale(1.02);
+}
+
+.showcase-item h4{
+
+    margin-top:22px;
+
+    color:#A8A1D6;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+}
+
+.showcase-item h3{
+
+    margin-top:10px;
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:500;
+}
+
+
+/*====================================================
+            RESPONSIVE SHOWCASE
+=====================================================*/
+
+@media(max-width:900px){
+
+.showcase-header{
+
+    flex-direction:column;
+
+    gap:25px;
+
+    text-align:center;
+}
+
+.showcase-grid{
+
+    grid-template-columns:1fr;
+}
+
+.showcase-item img{
+
+    height:auto;
+}
+
+}
+
+/*====================================================
+                PRICING SECTION
+=====================================================*/
+
+.pricing-section{
+
+    position:relative;
+
+    min-height:100vh;
+
+    padding:80px 0;
+
+    background:url("../images/pricetable.jpg") center center/cover no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.pricing-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(28,35,85,.65);
+}
+
+.pricing-container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:1200px;
+
+    max-width:92%;
+
+    margin:0 auto;
+
+    color:#fff;
+
+    text-align:center;
+}
+
+.pricing-container h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.pricing-subtitle{
+
+    width:650px;
+
+    max-width:100%;
+
+    margin:0 auto 60px;
+
+    font-size:22px;
+
+    line-height:32px;
+
+    opacity:.9;
+}
+
+
+/*====================================================
+                PRICING CARDS
+=====================================================*/
+
+.pricing-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+}
+
+.pricing-card{
+
+    padding:45px;
+
+    border:1px solid rgba(255,255,255,.20);
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.pricing-card:hover{
+
+    transform:translateY(-6px);
+}
+
+.pricing-card h3{
+
+    text-align:left;
+
+    font-size:28px;
+
+    font-weight:500;
+
+    margin-bottom:30px;
+}
+
+
+/*====================================================
+                PRICE
+=====================================================*/
+
+.pricing-price{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    margin-bottom:35px;
+}
+
+.pricing-amount{
+
+    font-size:58px;
+
+    font-weight:700;
+
+    line-height:1;
+}
+
+.pricing-price sup{
+
+    margin-left:5px;
+
+    font-size:22px;
+}
+
+
+/*====================================================
+                FEATURES
+=====================================================*/
+
+.pricing-card ul{
+
+    list-style:none;
+
+    text-align:left;
+
+    margin-bottom:40px;
+}
+
+.pricing-card li{
+
+    margin:15px 0;
+
+    color:#D8D8D8;
+
+    font-size:16px;
+    line-height:26px;
+}
+
+.pricing-card li:nth-child(-n+4),
+.pricing-featured li:nth-child(-n+7),
+.pricing-card:last-child li{
+
+    color:#fff;
+}
+
+
+/*====================================================
+                BUTTONS
+=====================================================*/
+
+.pricing-card button{
+
+    width:100%;
+
+    height:60px;
+
+    border:2px solid rgba(255,255,255,.30);
+
+    border-radius:35px;
+
+    background:transparent;
+
+    color:#fff;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+
+.pricing-card button:hover{
+
+    background:rgba(255,255,255,.08);
+}
+
+.pricing-btn-primary{
+
+    background:#E93D82 !important;
+
+    border:none !important;
+}
+
+.pricing-btn-primary:hover{
+
+    background:#d62c72 !important;
+}
+
+
+/*====================================================
+            RESPONSIVE PRICING
+=====================================================*/
+
+@media(max-width:1000px){
+
+.pricing-cards{
+
+    grid-template-columns:1fr;
+}
+
+.pricing-subtitle{
+
+    width:90%;
+}
+
+.pricing-card{
+
+    max-width:500px;
+
+    margin:auto;
+}
+
+}
+
+/*====================================================
+                    FOOTER
+=====================================================*/
+
+.footer{
+
+    background:#2F1893;
+
+    color:#fff;
+
+    padding:70px 0;
+}
+
+.footer-container{
+
+    width:1150px;
+
+    max-width:90%;
+
+    margin:0 auto;
+}
+
+
+/*====================================================
+                FOOTER TOP
+=====================================================*/
+
+.footer-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:45px;
+}
+
+.footer-top h1{
+
+    font-size:24px;
+
+    font-weight:700;
+}
+
+.footer-social{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+}
+
+.footer-social a{
+
+    color:#fff;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.footer-social a:hover{
+
+    opacity:.7;
+}
+
+
+/*====================================================
+                FOOTER DIVIDER
+=====================================================*/
+
+.footer hr{
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin-bottom:45px;
+}
+
+
+/*====================================================
+                FOOTER BOTTOM
+=====================================================*/
+
+.footer-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+
+    color:#fff;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+.footer-links a:hover{
+
+    opacity:.7;
+}
+
+.footer-bottom p{
+
+    font-size:16px;
+
+    opacity:.9;
+}
+
+
+/*====================================================
+            RESPONSIVE FOOTER
+=====================================================*/
+
+@media(max-width:900px){
+
+.footer-top,
+
+.footer-bottom{
+
+    flex-direction:column;
+
+    gap:35px;
+
+    text-align:center;
+}
+
+.footer-links{
+
+    justify-content:center;
+}
+
+}
